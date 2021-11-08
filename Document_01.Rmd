@@ -1,0 +1,99 @@
+---
+title: "Ecosystem-based approaches in disaster risk reduction"
+author: "Fabián_Montién"
+date: "30/10/2021"
+output: html_document
+bibliography: biblio.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## **Introduction**
+
+<div style="text-align: justify">
+Disasters as floods and landslides have been increasing in the last 20 years around the world. During 2000-2019, 7.348 disaster events occurred compared to 4.212 registered between 1980-1999 [@sudmeier2019disasters].
+
+This pattern related to disaster risks has led stakeholders to improve their actions synergetically. One of those comprehensive interventions is nature-based solutions focused on two approaches: ecosystem-based disaster risk reduction (Eco-DRR) and ecosystem-based adaptation (EbA).
+
+Under these two lines of action, countries like Mexico, Jamaica, Angola, Mozambique, Nepal, Bangladesh, and Albania have conducted projects in which results have demonstrated resilient and sustainable solutions, even co-benefits. This document explores the two main concepts of Eco-DRR and EbA. Additionally, it presents some successful case studies around the world.
+<div/>
+
+## **Ecosystem-based disaster risk reduction**
+
+<div style="text-align: justify">
+According to Estrella and Saalismaa,2013: *"It is the sustainable management, conservation, and restoration of ecosystems to reduce disaster risk, with the aim to achieve sustainable and resilient development."* Hence, the concept explores natural resources management alongside disaster risk reduction measures to tackle significant risk scenarios as floods.
+
+One such example is mangroves which act as natural infrastructure that reduce physical exposure to tsunamis. Therefore, through ecosystem management, this crucial natural barrier could also offer socio-economic resilience to people and communities by sustaining local livelihoods (eco-tourism) and providing natural resources (water, food). At the same time, it reduces the intensity of the hazard [@sudmeier2019disasters].
+<div/>
+
+## **Ecosystem-based adaptation**
+
+<div style="text-align: justify">
+The Convention on Biological Diversity, 2009, defines the concept as *"the use of biodiversity and ecosystem services as part of an overall adaptation strategy to help people adapt to the adverse effects of climate change."*. Consequently, the term relates a long term of environmental management to adapt to climatic variations. One instance could be resilient crop varieties and integrated water resources management within the agricultural sector; by guaranteeing resourceful cultivation to tackle extreme dry and rainy seasons [@sudmeier2019disasters].
+
+Lastly, the Eco-DRR and the EbA approach aim to achieve similar interventions, for example, sustainable management, conservation, and ecosystem restoration. Nevertheless, there are some differences to take into account. Firstly, EbA is more related to ecosystem services and biodiversity rather than Eco-DRR. Whereas, Eco-DRR does not focus primarily on protecting biodiversity but on increasing resilience on people to reduce risks [@sudmeier2019disasters].
+<div/>
+
+
+
+## **Projects sponsored from international organizations**
+
+<div style="text-align: justify">
+Nowadays, the United Nations Environment Programme sponsors 45 projects related to EbA and some with Eco-DRR around the world with significant results [@nehren2014ecosystem]. Most of them are carried out in Latinamerica (Mexico and Jamaica), Africa (Mozambique and Tanzania), Asia (Nepal and Bangladesh), and Europe (Albania) **(Figure 1).** 
+Most of the projects are being held in Africa and Asia, with 21 and 14 interventions respectively **(Figure 2)**. The **(Table 1)** shows some of the projects  taken by the local stakeholders and the community per continent.
+<div/>
+<br>
+
+<div style="text-align:center">
+***Figure 1.***Project's distribution around the world concerning Eco-DRR and EbA.
+
+![](C:\Users\fabia\Documents\TRABAJOS MSC\FIRST SEMESTER\INTRODUCTION TO PROGRAMMING AND STATISTICS FOR REMOTE SENSING AND GIS\SEMANA 1\TASKS\Task_Document\Fabian_scripts\Projects_around_the_world.png){width=70%}
+<br>
+
+***Source:***UNEP,2019.
+
+[Projects around the world](https://www.unep.org/explore-topics/climate-action/what-we-do/climate-adaptation/ecosystem-based-adaptation)
+<div/>
+
+<br>
+
+<div style="text-align:center">
+
+***Table 1.***Projects per country related to EbA and Eco-DRR.
+
+```{r echo=FALSE}
+Country<-c("Mexico","Mozambique","Nepal","Albania")
+Project<-c("Building climate resilience of urban systems through Ecosystem-based Adaptation (EbA) in Latin America and the Caribbean.","Building resilience in the coastal zone through Ecosystem-based approaches to adaptation (EbA).","Catalyzing ecosystem restoration for resilient natural capital and rural livelihoods in degraded forests and rangelands of Nepal.","Building the Resilience of Kune-Vaini Lagoon through Ecosystem-based Adaptation (EbA).")
+casestudies<-data.frame(Country,Project)
+knitr::kable(casestudies,"pipe",col.name=c("Country","Project"),align=c("c","c")
+)
+```
+
+***Source:***UNEP,2019.
+<div/>
+
+<br>
+
+<div style="text-align:center">
+***Figure 2.***Project's distribution around the world concerning Eco-DRR and EbA.  
+```{r pressure, echo=FALSE}
+
+x<-c(1,2,3,4)
+y<-c(1,21,14,1)
+yf<-factor(y)
+levels(yf)<-c("Latinamerica","Africa","Asia","Europe")
+projects<-table(yf)
+pie(y,levels (yf),col=c("#90EE90","#FFDEAD","#C0C0C0","#EE82EE"))
+```
+
+***Source:***Author,2021.
+<div/>  
+
+## **References**
+
+<div style="text-align: justify">
+
+<div/>
+
